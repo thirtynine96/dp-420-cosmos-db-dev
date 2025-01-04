@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Connect to Azure Cosmos DB for NoSQL with the SDK'
-    module: 'Module 3 - Connect to Azure Cosmos DB for NoSQL with the SDK'with Python
+    module: 'Module 3 - Connect to Azure Cosmos DB for NoSQL with the SDK with Python'
 ---
 
 Azure Cosmos DB와 Python SDK를 사용하여 Python으로 이 핸즈온 실습을 진행할 수 있도록 내용을 Python 기반으로 변환. 
