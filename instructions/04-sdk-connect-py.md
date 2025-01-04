@@ -76,7 +76,7 @@ except exceptions.CosmosHttpResponseError as e:
 
  ```
 
-	3.	Python 코드 실행
+#	3.	Python 코드 실행
 위 코드의 <YOUR_COSMOS_DB_ACCOUNT_URI>와 <YOUR_COSMOS_DB_PRIMARY_KEY>를 Azure 포털에서 가져와 대체한 후 실행합니다.
 
 작업 설명
