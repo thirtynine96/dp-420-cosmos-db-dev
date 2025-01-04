@@ -1,17 +1,22 @@
-Azure Cosmos DB와 Python SDK를 사용하여 Python으로 이 핸즈온 실습을 진행할 수 있도록 내용을 Python 기반으로 변환해 드리겠습니다.
+---
+lab:
+    title: 'Connect to Azure Cosmos DB for NoSQL with the SDK'
+    module: 'Module 3 - Connect to Azure Cosmos DB for NoSQL with the SDK'with Python
+---
 
-아래는 Microsoft의 Cosmos DB Python SDK를 사용한 예제 코드입니다. Microsoft의 핸즈온 랩 구조에 맞춰 Python 버전을 작성하였습니다.
+Azure Cosmos DB와 Python SDK를 사용하여 Python으로 이 핸즈온 실습을 진행할 수 있도록 내용을 Python 기반으로 변환. 
+Microsoft의 Cosmos DB Python SDK를 사용한 예제 코드임.
 
 Python SDK로 Azure Cosmos DB 연결 및 데이터 작업
-	1.	Python 환경 설정
+# 1.	Python 환경 설정
 Python SDK를 설치합니다.
-
+ ```
 pip install azure-cosmos
+ ```
 
-
-	2.	Python 코드 작성
+# 2.	Python 코드 작성
 아래는 핸즈온에서 제공된 작업을 Python 코드로 변환한 예제입니다.
-
+ ```
 from azure.cosmos import CosmosClient, PartitionKey, exceptions
 
 # Cosmos DB 연결 정보
@@ -69,11 +74,12 @@ try:
 except exceptions.CosmosHttpResponseError as e:
     print(f"An error occurred: {e.message}")
 
+ ```
 
 	3.	Python 코드 실행
 위 코드의 <YOUR_COSMOS_DB_ACCOUNT_URI>와 <YOUR_COSMOS_DB_PRIMARY_KEY>를 Azure 포털에서 가져와 대체한 후 실행합니다.
 
-핵심 작업 설명
+작업 설명
 	•	Database 생성: create_database_if_not_exists를 사용해 데이터베이스를 생성합니다.
 	•	Container 생성: create_container_if_not_exists로 컨테이너를 생성하며, 파티션 키를 설정합니다.
 	•	데이터 삽입: create_item 메서드로 JSON 문서를 삽입합니다.
