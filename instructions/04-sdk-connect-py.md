@@ -4,6 +4,55 @@ lab:
     module: 'Module 3 - Connect to Azure Cosmos DB for NoSQL with the SDK with Python'
 ---
 
+## Prepare your development environment
+
+If you have not already cloned the lab code repository for **DP-420** to the environment where you're working on this lab, follow these steps to do so. Otherwise, open the previously cloned folder in **Visual Studio Code**.
+
+1. Start **Visual Studio Code**.
+
+    > &#128221; If you are not already familiar with the Visual Studio Code interface, review the [Get Started guide for Visual Studio Code][code.visualstudio.com/docs/getstarted]
+
+1. Open the command palette and run **Git: Clone** to clone the ``https://github.com/microsoftlearning/dp-420-cosmos-db-dev`` GitHub repository in a local folder of your choice.
+
+    > &#128161; You can use the **CTRL+SHIFT+P** keyboard shortcut to open the command palette.
+
+1. Once the repository has been cloned, open the local folder you selected in **Visual Studio Code**.
+
+## Create an Azure Cosmos DB for NoSQL account
+
+Azure Cosmos DB is a cloud-based NoSQL database service that supports multiple APIs. When provisioning an Azure Cosmos DB account for the first time, you will select which of the APIs you want the account to support (for example, **Mongo API** or **NoSQL API**). Once the Azure Cosmos DB for NoSQL account is done provisioning, you can retrieve the endpoint and key and use them to connect to the Azure Cosmos DB for NoSQL account using the Azure SDK for .NET or any other SDK of your choice.
+
+1. In a new web browser window or tab, navigate to the Azure portal (``portal.azure.com``).
+
+1. Sign into the portal using the Microsoft credentials associated with your subscription.
+
+1. Select **+ Create a resource**, search for *Cosmos DB*, and then create a new **Azure Cosmos DB for NoSQL** account resource with the following settings, leaving all remaining settings to their default values:
+
+    | **Setting** | **Value** |
+    | ---: | :--- |
+    | **Subscription** | *Your existing Azure subscription* |
+    | **Resource group** | *Select an existing or create a new resource group* |
+    | **Account Name** | *Enter a globally unique name* |
+    | **Location** | *Choose any available region* |
+    | **Capacity mode** | *Provisioned throughput* |
+    | **Apply Free Tier Discount** | *Do Not Apply* |
+    | **Limit the total amount of throughput that can be provisioned on this account** | *Unchecked* |
+
+    > &#128221; Your lab environments may have restrictions preventing you from creating a new resource group. If that is the case, use the existing pre-created resource group.
+
+1. Wait for the deployment task to complete before continuing with this task.
+
+1. Go to the newly created **Azure Cosmos DB** account resource and navigate to the **Keys** pane.
+
+1. This pane contains the connection details and credentials necessary to connect to the account from the SDK. Specifically:
+
+    1. Notice the **URI** field. You will use this **endpoint** value later in this exercise.
+
+    1. Notice the **PRIMARY KEY** field. You will use this **key** value later in this exercise.
+
+1. Keep the browser tab open, as we will return to it later.
+
+
 Azure Cosmos DB와 Python SDK를 사용하여 Python으로 이 핸즈온 실습을 진행할 수 있도록 내용을 Python 기반으로 변환. 
 Microsoft의 Cosmos DB Python SDK를 사용한 예제 코드임.
 
