@@ -30,6 +30,7 @@ container = database.create_container_if_not_exists(
 
 print("[INFO] Database & Container 준비 완료")
 
+input()
 # (6) 예시 아이템 정의
 #     실제 시나리오에서는 사용자 입력, JSON 파일, 혹은 다른 소스에서 불러올 수 있음
 item_to_create = {
@@ -51,7 +52,7 @@ try:
 except Exception as e:
     print("[CREATE] 에러 발생:", e)
 
-
+input()
 ##
 # READ
 ##
