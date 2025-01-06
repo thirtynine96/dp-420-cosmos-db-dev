@@ -57,8 +57,8 @@ To accompany the products container, you will create a **flatproducts** containe
     ```
     dotnet tool install cosmicworks --global --version 1.*
     ```
-    ** 오류가 생기면, dotnet 8.0 이상을 설치합니다. **
-    ** 그리고 나서 다음과 같이 설치합니다. **
+    **오류가 생기면, dotnet 8.0 이상을 설치합니다.**
+    **그리고 나서 다음과 같이 설치합니다.**
     ```
     dotnet tool install cosmicworks --global 
     ```    
@@ -75,7 +75,7 @@ To accompany the products container, you will create a **flatproducts** containe
     ```
     cosmicworks --endpoint <cosmos-endpoint> --key <cosmos-key> --datasets product
     ```
-    ** 위와 같이 하면 오류가 발생할것입니다. Connection String 방식 (키 기반) 을 사용하세요. **
+    **위와 같이 하면 오류가 발생할것입니다. Connection String 방식 (키 기반) 을 사용하세요.**
     ```
        cosmicworks `
       --connection-string "AccountEndpoint=<엔드포인트URL>;AccountKey=<계정키>;" `
@@ -176,7 +176,16 @@ Now that the Azure Cosmos DB for NoSQL resources are in place, you will create a
     FROM 
         products p
     ```
-
+    **위는 old version 이고 아래와 같이 수정합니다.**
+    ```
+     SELECT 
+         p.name, 
+         p.category.name as category, 
+         p.price 
+     FROM 
+         products p
+    ```
+    
 1. Select **Preview data** to test the query's validity. Select **Next** to move to the **Destination** step of the wizard.
 
 1. In the **Destination** step of the wizard, in the **Destination type** list, select **Azure Cosmos DB for NoSQL**.
