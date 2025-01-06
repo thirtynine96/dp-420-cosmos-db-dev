@@ -1,6 +1,8 @@
+#  먼저, 
+# pip install azure-cosmos 
+#  명령어로 Python용 Azure Cosmos 패키지를 설치합니다.
 #
-#  먼저, pip install azure-cosmos 명령어로 Python용 Azure Cosmos 패키지를 설치합니다.
-#
+
 import json
 from azure.cosmos import CosmosClient, PartitionKey
 
@@ -65,6 +67,7 @@ try:
 except Exception as e:
     print("[READ] 에러 발생:", e)
 
+input()
 
 ##
 # QUERY
@@ -90,6 +93,7 @@ except Exception as e:
     print("[QUERY] 에러 발생:", e)
 
 
+input()
 ##
 # UPDATE (Replace)
 ##
@@ -113,7 +117,7 @@ try:
 except Exception as e:
     print("[UPDATE] 에러 발생:", e)
 
-
+input()
 ##
 # DELETE
 ##
