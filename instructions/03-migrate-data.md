@@ -57,7 +57,11 @@ To accompany the products container, you will create a **flatproducts** containe
     ```
     dotnet tool install cosmicworks --global --version 1.*
     ```
-
+** 오류가 생기면, dotnet 8.0 이상을 설치합니다. 
+** 그리고 나서 다음과 같이 설치합니다. 
+    ```
+    dotnet tool install cosmicworks --global 
+    ```    
     > &#128161; This command may take a couple of minutes to complete. This command will output the warning message (*Tool 'cosmicworks' is already installed') if you have already installed the latest version of this tool in the past.
 
 1. Run cosmicworks to seed your Azure Cosmos DB account with the following command-line options:
@@ -71,7 +75,13 @@ To accompany the products container, you will create a **flatproducts** containe
     ```
     cosmicworks --endpoint <cosmos-endpoint> --key <cosmos-key> --datasets product
     ```
-
+    ** 위와 같이 하면 오류가 발생할것입니다. Connection String 방식 (키 기반) 을 사용하세요.
+    ```
+       cosmicworks `
+      --connection-string "AccountEndpoint=<엔드포인트URL>;AccountKey=<계정키>;" `
+      --datasets product
+     ```
+    
     > &#128221; For example, if your endpoint is: **https&shy;://dp420.documents.azure.com:443/** and your key is: **fDR2ci9QgkdkvERTQ==**, then the command would be:
     > ``cosmicworks --endpoint https://dp420.documents.azure.com:443/ --key fDR2ci9QgkdkvERTQ== --datasets product``
 
