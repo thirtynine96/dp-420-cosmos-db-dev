@@ -185,7 +185,8 @@ Now that the Azure Cosmos DB for NoSQL resources are in place, you will create a
      FROM 
          products p
     ```
-    
+   ***partition key를 (non-하이어아키!)로 변경합니다. data explorer-> container-> (우클릭) setting -> partition key**
+   
 1. Select **Preview data** to test the query's validity. Select **Next** to move to the **Destination** step of the wizard.
 
 1. In the **Destination** step of the wizard, in the **Destination type** list, select **Azure Cosmos DB for NoSQL**.
