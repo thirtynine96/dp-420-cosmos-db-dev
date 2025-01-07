@@ -68,7 +68,7 @@ The [cosmicworks][nuget.org/packages/cosmicworks] command-line tool deploys samp
 1. Install the [cosmicworks][nuget.org/packages/cosmicworks] command-line tool for global use on your machine.
 
     ```
-    dotnet tool install cosmicworks --global --version 1.*
+    dotnet tool install cosmicworks --global
     ```
 
     > &#128161; This command may take a couple of minutes to complete. This command will output the warning message (*Tool 'cosmicworks' is already installed') if you have already installed the latest version of this tool in the past.
@@ -83,6 +83,10 @@ The [cosmicworks][nuget.org/packages/cosmicworks] command-line tool deploys samp
 
     ```
     cosmicworks --endpoint <cosmos-endpoint> --key <cosmos-key> --datasets product
+
+    또는
+    
+    cosmicworks --connection-string <connection-string>
     ```
 
     > &#128221; For example, if your endpoint is: **https&shy;://dp420.documents.azure.com:443/** and your key is: **fDR2ci9QgkdkvERTQ==**, then the command would be:
