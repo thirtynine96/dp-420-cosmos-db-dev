@@ -22,7 +22,7 @@ def main():
         container = database.get_container_client(CONTAINER_NAME)
 
         # SQL 쿼리 정의
-        sql_query = "SELECT * FROM products WHERE p.price > @lower"
+        sql_query = "SELECT * FROM products p WHERE p.price > @lower"
 
         # 쿼리 매개변수와 옵션 설정
         parameters = [
