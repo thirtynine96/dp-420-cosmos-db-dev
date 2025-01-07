@@ -64,8 +64,12 @@ except AzureError as e:
 ```
 요약
 	1.	CosmosClient 설정: Python SDK를 사용해 Cosmos DB에 연결합니다.
+ 
 	2.	쿼리 작성: SQL 쿼리와 매개변수를 정의합니다.
+ 
 	3.	쿼리 옵션 지정: max_item_count를 설정하여 페이지 크기를 제어합니다.
+ 
 	4.	FeedIterator 사용: query_items와 by_page를 통해 페이지별 데이터를 처리합니다.
+ 
 
 이 코드는 Cosmos DB Python SDK를 사용하여 대규모 데이터셋을 페이지 단위로 처리할 수 있도록 설계되었습니다. 필요에 따라 max_item_count 값을 조정하여 성능을 최적화할 수 있습니다.
