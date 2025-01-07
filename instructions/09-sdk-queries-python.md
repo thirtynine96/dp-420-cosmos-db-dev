@@ -23,7 +23,7 @@ container = database.get_container_client(container_name)
 
 SQL 쿼리를 문자열로 작성합니다.
 ```
-sql_query = "SELECT * FROM products WHERE p.price > @lower"
+sql_query = "SELECT * FROM products p WHERE p.price > @lower"
 ```
 3. Query Options 설정
 
