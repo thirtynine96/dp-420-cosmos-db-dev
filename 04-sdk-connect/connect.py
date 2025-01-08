@@ -2,7 +2,7 @@ from azure.cosmos import CosmosClient, PartitionKey, exceptions
 
 # Cosmos DB 연결 정보
 endpoint = "https://cosmos-dustin.documents.azure.com:443/"
-key = "gaG1dj623kKqR90ZTYJL0xn6aXqVolyodzOrlpFl4feNn6bHzvbV7J8vv5eDirNGNirjU3hFzuSYACDbIFvPDA=="
+key = "@=="
 database_name = "cosmicworks_python"
 container_name = "products_new_python"
 

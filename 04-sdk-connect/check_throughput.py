@@ -2,7 +2,7 @@ from azure.cosmos import CosmosClient
 
 # Cosmos DB 클라이언트 초기화
 endpoint = "https://cosmos-dustin.documents.azure.com:443/"
-key = "gaG1dj623kKqR90ZTYJL0xn6aXqVolyodzOrlpFl4feNn6bHzvbV7J8vv5eDirNGNirjU3hFzuSYACDbIFvPDA=="
+key = "@=="
 client = CosmosClient(endpoint, key)
 
 # 데이터베이스 참조

@@ -8,7 +8,7 @@ from azure.core.exceptions import AzureError
 
 # Cosmos DB 연결 정보
 COSMOS_URL = "https://cosmos-dustin.documents.azure.com:443/"
-COSMOS_KEY = "gaG1dj623kKqR90ZTYJL0xn6aXqVolyodzOrlpFl4feNn6bHzvbV7J8vv5eDirNGNirjU3hFzuSYACDbIFvPDA=="
+COSMOS_KEY = "@=="
 DATABASE_NAME = "cosmicworks"
 CONTAINER_NAME = "products_new"
 
