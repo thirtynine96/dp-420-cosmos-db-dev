@@ -7,10 +7,10 @@ from azure.cosmos import CosmosClient
 from azure.core.exceptions import AzureError
 
 # Cosmos DB 연결 정보
-COSMOS_URL = "https://<your-account-name>.documents.azure.com:443/"
-COSMOS_KEY = "<your-primary-key>"
-DATABASE_NAME = "your-database-name"
-CONTAINER_NAME = "your-container-name"
+COSMOS_URL = "https://cosmos-dustin.documents.azure.com:443/"
+COSMOS_KEY = "gaG1dj623kKqR90ZTYJL0xn6aXqVolyodzOrlpFl4feNn6bHzvbV7J8vv5eDirNGNirjU3hFzuSYACDbIFvPDA=="
+DATABASE_NAME = "cosmicworks"
+CONTAINER_NAME = "products_new"
 
 def main():
     try:
@@ -29,7 +29,7 @@ def main():
             {"name": "@lower", "value": 500}  # 쿼리 필터 값
         ]
         query_options = {
-            "max_item_count": 100  # 한 페이지에서 반환할 최대 항목 수
+            "max_item_count": 10  # 한 페이지에서 반환할 최대 항목 수
         }
 
         # FeedIterator 생성
