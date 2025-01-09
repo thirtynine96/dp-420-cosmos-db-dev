@@ -76,6 +76,9 @@ Azure Cosmos DB is a cloud-based NoSQL database service that supports multiple A
     | **Container id** | *``products``* |
     | **Partition key** | *``/categoryId``* |
 
+    > &#128221; 이렇게 되지 않을겁니다. cosmicworks tool 로 생성한 기존 products 컨테이너가 있다면, 아래 python code 를 실행하여 컨테이너를 비웁니다.
+    > https://github.com/jhjwlee/dp-420-cosmos-db-dev/blob/main/13-change-feed/xdelete_all.py   
+
 1. Back in the **Data Explorer** pane, expand the **cosmicworks** database node and then observe the **products** container node within the hierarchy.
 
 1. In the **Data Explorer** pane, select **New Container** again.
